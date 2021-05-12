@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+@media screen and (max-width: 320px) {
+  body {
+    background-color: Rgb(42, 44, 47);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 320px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .container {
+    display: block;
+  }
+  /* Header + links */
+  .header__link {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.3rem;
+    margin-left: 60px;
+  }
+  .header__link__en {
+    margin-right: 10px;
+  }
+  .header__link__es {
+    text-decoration: none;
+  }
+  .header__image {
+    width: 150px;
+  }
+  /* Main picture and text */
+  .main__picture {
+    margin: auto;
+  }
+  .main__picture__h1 {
+    font-size: 2.5rem;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .main__picture__h3 {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 300px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .main__picture__img {
+    width: 320px;
+    height: 200px;
+    padding-top: 50px;
+  }
+  .main__picture__p {
+    margin-bottom: 80px;
+    font-size: 0.6rem;
+    width: 280px;
+    margin-left: 25px;
+      }
+  /* Description of country with list of stats */
+  .country__section {
+    margin-top: 80px;
+    width: 280px;
+    margin: auto;
+  }
+  .country__section__h2 {
+    font-size: 2rem;
+    width: 280px;
+    line-height: 1em;
+    font-weight: 900;
+  }
+  .country__section__h4 {
+    width: 280px;
+    padding: 50px 0px;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  .country__section__p {
+    font-size: 0.9rem;
+    width: 280px;
+    margin: auto;
+  }
+  .country__section_ul {
+    list-style: none;
+    font-size: 0.7rem;
+    margin-top: 40px;
+  }
+  .country__section_ul__span {
+    font-weight: bold;
+  }
+
+  /* Center Grid Images */
+  .main__images {
+    display: grid;
+    grid-template-rows: repeat(auto, auto);
+    grid-template-columns: repeat(1, auto);
+    gap: 20px 20px;
+    margin-left: 16px;
+    margin-top: 80px;
+  }
+  .main__images__grid {
+    width: 280px;
+    height: 200px;
+  }
+
+  /* Styling for all States */
+  .place {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(auto, auto);
+    grid-template-areas:
+      'title .'
+      'img . '
+      'body .';
+    gap: 10px 20px;
+    width: 300px;
+    margin-top: 50px;
+  }
+  .places__title {
+    grid-area: title;
+    font-size: 2rem;
+    margin-left: 25px;
+  }
+  .places__website {
+    grid-area: web;
+    display: none;
+  }
+  .places__images {
+    height: 320px;
+    width: 320px;
+    grid-area: img;
+  }
+  .place__body {
+    width: 280px;
+    grid-area: body;
+    margin: auto;
+  }
+  .place__description {
+    grid-area: description;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  /* Background Image bottom of page  */
+  .background__image {
+    height: 200px;
+    width: 320px;
+    background-image: url(/images/uns.jpg);
+    background-size: cover;
+    margin-top: 100px;
+  }
+  .background__image__h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 50px;
+  }
+  .background__image__p {
+    justify-content: center;
+    display: flex;
+    width: 320px;
+    margin: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+  /* Footer Style */
+  .footer {
+    display: flex;
+    width: 300px;
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__links {
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .no__underline {
+    text-decoration: none;
+  }
+  .copy__right {
+    text-align: right;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  body {
+    background-color: Rgb(42, 44, 47);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 768px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .container {
+    display: block;
+  }
+  /* Header + links */
+  .header__link {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+  }
+  .header__link__en {
+    margin-right: 20px;
+  }
+  .header__link__es {
+    text-decoration: none;
+  }
+
+  /* Main picture and text */
+  .main__picture__h1 {
+    font-size: 6rem;
+    width: 768px;
+    text-align: center;
+  }
+  .main__picture__h3 {
+    text-align: center;
+    font-size: 2rem;
+    width: 768px;
+    font-weight: 500;
+  }
+  .main__picture__img {
+    width: 768px;
+    height: 650px;
+    padding-top: 50px;
+    margin: auto;
+  }
+  .main__picture__p {
+    margin-bottom: 80px;
+    margin-left: 30px;
+  }
+  /* Description of country with list of stats */
+  .country__section {
+    margin-top: 80px;
+    margin-left: 30px;
+    width: 700px;
+  }
+  .country__section__h2 {
+    font-size: 3.2rem;
+    width: 650px;
+    line-height: 1em;
+    font-weight: 900;
+  }
+  .country__section__h4 {
+    width: 650px;
+    padding: 50px 0px;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  .country__section__p {
+    width: 650px;
+  }
+  .country__section_ul {
+    list-style: none;
+    margin: 50px 0px;
+    font-size: 0.8rem;
+  }
+  .country__section_ul__span {
+    font-weight: bold;
+  }
+
+  /* Center Grid Images */
+  .main__images {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    width: 700px;
+    margin-left: 30px;
+  }
+  .main__images__grid {
+    width: 345px;
+    height: 200px;
+  }
+
+  /* Styling for all States */
+  .place {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      'title web'
+      'img body'
+      'img body'
+      'img body';
+    gap: 10px 20px;
+    width: 700px;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+  .places__title {
+    grid-area: title;
+    font-size: 3rem;
+  }
+  .places__website {
+    grid-area: web;
+    margin-top: 50px;
+  }
+  .places__images {
+    height: 450px;
+    width: 350px;
+    grid-area: img;
+  }
+  .place__body {
+    width: 350px;
+    grid-area: body;
+  }
+  .place__description {
+    grid-area: description;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  /* Background Image bottom of page  */
+  .background__image {
+    height: 480px;
+    width: 768px;
+    background-image: url(/images/uns.jpg);
+    background-size: cover;
+    margin-top: 100px;
+  }
+  .background__image__h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 4.5rem;
+    padding-top: 200px;
+  }
+  .background__image__p {
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  /* Footer Style */
+  .footer {
+    width: 700px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  .footer__links {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  .no__underline {
+    text-decoration: none;
+  }
+  .copy__right {
+    text-align: right;
+    width: 200px;
+    margin-left: 500px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    background-color: Rgb(42, 44, 47);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 130px;
+  }
+  .container {
+    display: block;
+  }
+  /* Header + links */
+  .header__link {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+  }
+  .header__link__en {
+    margin-right: 50px;
+  }
+  .header__link__es {
+    text-decoration: none;
+  }
+
+  /* Main picture and text */
+  .main__picture__h1 {
+    font-size: 6rem;
+    width: 1200px;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+  }
+  .main__picture__h3 {
+    text-align: center;
+    font-size: 2rem;
+    width: 800px;
+    font-weight: 500;
+    margin: auto;
+  }
+  .main__picture__img {
+    width: 1000px;
+    height: 650px;
+    margin-left: 130px;
+    margin-top: 30px;
+  }
+  .main__picture__p {
+    margin-left: 130px;
+    margin-bottom: 80px;
+  }
+  /* Description of country with list of stats */
+  .country__section {
+    margin-top: 80px;
+    margin: auto;
+    width: 1000px;
+  }
+  .country__section__h2 {
+    font-size: 3.9rem;
+    width: 700px;
+    line-height: 1em;
+    font-weight: 900;
+  }
+  .country__section__h4 {
+    width: 700px;
+    font-size: 1.4rem;
+    line-height: 1em;
+    padding: 50px 0px;
+    font-weight: normal;
+  }
+  .country__section__p {
+    width: 700px;
+    line-height: 1.8em;
+    font-size: 1.1rem;
+  }
+  .country__section_ul {
+    list-style: none;
+    margin: 50px 0px;
+  }
+  .country__section_ul__span {
+    font-weight: bold;
+  }
+
+  /* Center Grid Images */
+  .main__images {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 1205px;
+    margin: auto;
+  }
+  .main__images__grid {
+    width: 285px;
+    height: 200px;
+  }
+
+  /* Styling for all States */
+  .place {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      'title web'
+      'img body'
+      'img body'
+      'img body';
+    gap: 20px 10px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .places__title {
+    grid-area: title;
+    font-size: 5rem;
+  }
+  .places__website {
+    grid-area: web;
+    margin-top: 50px;
+  }
+  .places__images {
+    height: 450px;
+    width: 450px;
+    grid-area: img;
+  }
+  .place__body {
+    width: 450px;
+    grid-area: body;
+  }
+  .place__description {
+    grid-area: description;
+    margin-bottom: 20px;
+  }
+
+  /* Background Image bottom of page  */
+  .background__image {
+    height: 750px;
+    width: 1200px;
+    background-image: url(/images/uns.jpg);
+    background-size: cover;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .background__image__h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    padding-top: 250px;
+  }
+  .background__image__p {
+    justify-content: center;
+    margin-left: 450px;
+    display: flex;
+    width: 300px;
+    text-align: center;
+  }
+  /* Footer Style */
+  .footer {
+    width: 1200px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  .footer__links {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  .no__underline {
+    text-decoration: none;
+  }
+  .copy__right {
+    text-align: right;
+    margin-left: auto;
+    width: 200px;
+  }
+}
